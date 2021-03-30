@@ -2,6 +2,7 @@
 	font-size: calc(10px + 2vmin);
 	display: flex;
 	flex-wrap: wrap;
+	align-content: stretch;
 }
 .App-header {
 	background-color: #282c34;
@@ -14,8 +15,4 @@
 }
 h4 {
 	margin: 1rem 2rem;
-}
-
-Template1 {
-	margin-left: auto;
 }
