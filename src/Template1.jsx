@@ -8,7 +8,7 @@ import "./template1.css";
 function Template1() {
 	return (
 		<div className="template1">
-			<img src="" alt="profile" srcset="" />
+			<img src="" alt="profile" />
 			<div className="social-links">
 				<img className="social-logo" src={linkedin} alt="facebook logo" />
 				<img className="social-logo" src={facebook} alt="facebook logo" />

@@ -1,10 +1,7 @@
 .App {
 	font-size: calc(10px + 2vmin);
 	display: flex;
-	justify-content: space-between;
-}
-h4 {
-	margin: 1rem 2rem;
+	flex-wrap: wrap;
 }
 .App-header {
 	background-color: #282c34;
@@ -14,4 +11,11 @@ h4 {
 	align-items: center;
 	justify-content: center;
 	color: white;
+}
+h4 {
+	margin: 1rem 2rem;
+}
+
+Template1 {
+	margin-left: auto;
 }
