@@ -1,8 +1,8 @@
 import React from "react";
 import facebook from "./facebook-f-brands.svg";
-// import logo from "./logo.png";
-// import logo from "./logo.png";
-// import logo from "./logo.png";
+import linkedin from "./linkedin-in-brands.svg";
+import twitter from "./twitter-brands.svg";
+import instagram from "./instagram-brands.svg";
 import "./template1.css";
 
 function Template1() {
@@ -10,7 +10,10 @@ function Template1() {
 		<div className="template1">
 			<img src="" alt="profile" srcset="" />
 			<div className="social-links">
-				{/* <img src={facebook} alt="facebooklogo" /> */}
+				<img className="social-logo" src={linkedin} alt="facebook logo" />
+				<img className="social-logo" src={facebook} alt="facebook logo" />
+				<img className="social-logo" src={twitter} alt="twitter logo" />
+				<img className="social-logo" src={instagram} alt="instagram logo" />
 			</div>
 
 			<div>
