@@ -8,7 +8,11 @@ import "./template1.css";
 function Template1() {
 	return (
 		<div className="template1">
-			<img src="" alt="profile" />
+			<img
+				className="profile-img"
+				src="https://louisville.edu/enrollmentmanagement/images/person-icon/image"
+				alt="profile"
+			/>
 			<div className="social-links">
 				<img className="social-logo" src={linkedin} alt="facebook logo" />
 				<img className="social-logo" src={facebook} alt="facebook logo" />
