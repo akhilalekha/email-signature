@@ -4,29 +4,63 @@ import { useForm } from "react-hook-form";
 import "./form.css";
 
 function Form() {
-	const { register, handleSubmit } = useForm();
+	const { register, handleSubmit } = useForm({
+		defaultValues: {
+			firstName: "John",
+			lastName: "Doe",
+			jobTitle: "Consultant",
+			department: "Business",
+			companyName: "Neoito",
+			phoneNum: "111 222 333",
+			mobileNum: "111 222 333",
+			siteUrl: "www.neoito.com",
+			email: "john@doe.com",
+			addLine1: "street",
+			addLine2: "city",
+			addLine3: "city",
+			addLine4: "state",
+			linkedin: "www.linkedin.com",
+			facebook: "www.facebook.com",
+			twitter: "www.twitter.com",
+			instagram: "www.instagram.com",
+			isDeveloper: true
+		}
+	});
 	const onSubmit = data => console.log(data);
 
 	return (
 		<form className="form" onSubmit={handleSubmit(onSubmit)}>
-			<label>First Name</label>
+			<label htmlFor="firstName">First Name</label>
 			<input name="firstName" ref={register} placeholder="John" />
-			<label>Last Name</label>
+
+			<label htmlFor="lastName">Last Name</label>
 			<input name="lastName" ref={register} placeholder="Doe" />
-			<label>Job Title</label>
+
+			<label htmlFor="jobTitle">Job Title</label>
 			<input name="jobTitle" ref={register} placeholder="Consultant" />
-			<label>Department</label>
+
+			<label htmlFor="department">Department</label>
 			<input name="department" ref={register} placeholder="Business" />
-			<label>Company Name</label>
+
+			<label htmlFor="companyName">Company Name</label>
 			<input name="companyName" ref={register} placeholder="Neoito" />
-			<label>Office Number</label>
+
+			<label htmlFor="phoneNum">Office Number</label>
 			<input name="phoneNum" ref={register} placeholder="111 222 333" />
-			<label>Mobile Number</label>
+
+			<label htmlFor="mobileNum">Mobile Number</label>
 			<input name="mobileNum" ref={register} placeholder="11 222 333" />
-			<label>Website URL</label>
+
+			<label htmlFor="siteUrl">Website URL</label>
 			<input name="siteUrl" ref={register} placeholder="john@doe.com" />
-			<label>Email Address</label>
-			<input name="email" ref={register} placeholder="www.neoito.com" />
+
+			<label htmlFor="email">Email Address</label>
+			<input
+				name="email"
+				ref={register}
+				placeholder="www.neoito.com"
+				type="email"
+			/>
 			<label>Address</label>
 			<input name="addLine1" ref={register} placeholder="Address Line 1" />
 			<input name="addLine2" ref={register} placeholder="Address Line 2" />
