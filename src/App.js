@@ -1,11 +1,12 @@
 import "./App.css";
 import Form from "./Form";
+import Template1 from "./Template1";
 
 function App() {
 	return (
 		<div className="App">
-			<h4>Enter your signature details</h4>
 			<Form />
+			<Template1 />
 		</div>
 	);
 }

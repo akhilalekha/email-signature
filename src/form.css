@@ -3,6 +3,9 @@
 	flex-direction: column;
 	margin: 2rem;
 }
+h4 {
+	text-align: left;
+}
 
 input {
 	width: 15rem;
