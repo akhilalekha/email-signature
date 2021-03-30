@@ -3,14 +3,39 @@
 	flex: 1;
 }
 
+.social-links {
+	display: flex;
+	justify-content: flex-start;
+}
 .social-logo {
 	height: 1.5rem;
 	width: 1.5rem;
-	margin: 1rem;
+	margin-right: 1rem;
 }
 
 .profile-img {
 	height: 5rem;
 	width: 7rem;
 	border-radius: 50%;
+}
+
+.full-name {
+	display: flex;
+	justify-content: space-between;
+	width: 11rem;
+}
+h5,
+p {
+	margin: 0;
+}
+
+.details {
+	display: flex;
+}
+
+/* .basic-details {
+} */
+
+.signature {
+	margin: 5rem;
 }
