@@ -18,22 +18,19 @@ function Template1() {
 					<img className="profile-img" src={profileImg} alt="profile" />
 					<div className="basic-details">
 						<p className="fullname">John Doe</p>
-						<p>Job Title</p>
-						<p>Department | Company</p>
+						<p>Product Marketing Manager</p>
+						<p>Marketing | Neoito</p>
 					</div>
 					<hr className="vr" />
 					<div className="contact-details">
 						<img className="contact-icon" src={phone} alt="phone icon" />
-						<p>Phone Number | Mobile Number</p>
-
+						<p>111 222 333 | 101 222 333</p>
 						<img className="contact-icon" src={mail} alt="mail icon" />
-						<a href="aaa@aaa.com">aaa@aaa.com</a>
-
+						<a href="john@doe.com">john@doe.com</a>
 						<img className="contact-icon" src={link} alt="url icon" />
-						<a href="aaa@aaa.com">aaa@aaa.com</a>
-
+						<a href="www.neoito.com">www.neoito.com</a>
 						<img className="contact-icon" src={pin} alt="location icon" />
-						<p>line1, line2, line3, line4</p>
+						<p>Neoito, Trivandrum</p>
 					</div>
 				</div>
 

@@ -8,8 +8,8 @@ function Form() {
 		defaultValues: {
 			firstName: "John",
 			lastName: "Doe",
-			jobTitle: "Consultant",
-			department: "Business",
+			jobTitle: "Product Marketing Manager",
+			department: "Marketing",
 			companyName: "Neoito",
 			phoneNum: "111 222 333",
 			mobileNum: "111 222 333",
