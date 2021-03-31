@@ -7,6 +7,7 @@ import pin from "./pin.svg";
 import phone from "./phone-alt-solid.svg";
 import mail from "./envelope-solid.svg";
 import link from "./chain.svg";
+import profileImg from "./user-circle-solid.svg";
 import "./template1.css";
 
 function Template1() {
@@ -14,13 +15,9 @@ function Template1() {
 		<div className="template1">
 			<div className="signature">
 				<div className="details">
-					<img
-						className="profile-img"
-						src="https://louisville.edu/enrollmentmanagement/images/person-icon/image"
-						alt="profile"
-					/>
+					<img className="profile-img" src={profileImg} alt="profile" />
 					<div className="basic-details">
-						<p className="fullname">First Name Last Name</p>
+						<p className="fullname">John Doe</p>
 						<p>Job Title</p>
 						<p>Department | Company</p>
 					</div>
@@ -30,10 +27,10 @@ function Template1() {
 						<p>Phone Number | Mobile Number</p>
 
 						<img className="contact-icon" src={mail} alt="mail icon" />
-						<p>aaa@aaa.com</p>
+						<a href="aaa@aaa.com">aaa@aaa.com</a>
 
 						<img className="contact-icon" src={link} alt="url icon" />
-						<p>www.aaa.com</p>
+						<a href="aaa@aaa.com">aaa@aaa.com</a>
 
 						<img className="contact-icon" src={pin} alt="location icon" />
 						<p>line1, line2, line3, line4</p>
@@ -42,10 +39,18 @@ function Template1() {
 
 				<hr />
 				<div className="social-links">
-					<img className="social-logo" src={linkedin} alt="facebook logo" />
-					<img className="social-logo" src={facebook} alt="facebook logo" />
-					<img className="social-logo" src={twitter} alt="twitter logo" />
-					<img className="social-logo" src={instagram} alt="instagram logo" />
+					<a href="www.linkedin.com">
+						<img className="social-logo" src={linkedin} alt="linkedin logo" />
+					</a>
+					<a href="www.facebook.com">
+						<img className="social-logo" src={facebook} alt="facebook logo" />
+					</a>
+					<a href="www.twitter.com">
+						<img className="social-logo" src={twitter} alt="twitter logo" />
+					</a>
+					<a href="www.instagram.com">
+						<img className="social-logo" src={instagram} alt="instagram logo" />
+					</a>
 				</div>
 			</div>
 		</div>
