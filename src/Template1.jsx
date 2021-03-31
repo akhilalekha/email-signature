@@ -1,20 +1,20 @@
 import React from "react";
-import facebook from "./facebook-f-brands.svg";
-import linkedin from "./linkedin-in-brands.svg";
-import twitter from "./twitter-brands.svg";
-import instagram from "./instagram-brands.svg";
+import facebook from "./facebook_circle.svg";
+import linkedin from "./linkedin_circle.svg";
+import twitter from "./twitter_circle.svg";
+import instagram from "./instagram_circle.svg";
 import "./template1.css";
 
 function Template1() {
 	return (
 		<div className="template1">
 			<div className="signature">
-				<img
-					className="profile-img"
-					src="https://louisville.edu/enrollmentmanagement/images/person-icon/image"
-					alt="profile"
-				/>
 				<div className="details">
+					<img
+						className="profile-img"
+						src="https://louisville.edu/enrollmentmanagement/images/person-icon/image"
+						alt="profile"
+					/>
 					<div className="basic-details">
 						<div className="full-name">
 							<h5>First Name</h5>
