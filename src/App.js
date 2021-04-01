@@ -1,6 +1,6 @@
 import "./App.css";
-import Form from "./Form";
-import Template1 from "./Template1";
+import Form from "./form/Form";
+import Template1 from "./templates/template1/Template1";
 
 function App() {
 	return (

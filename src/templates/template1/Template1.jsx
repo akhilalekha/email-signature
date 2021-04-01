@@ -1,14 +1,14 @@
 import React from "react";
-import facebook from "./facebook_circle.svg";
-import linkedin from "./linkedin_circle.svg";
-import twitter from "./twitter_circle.svg";
-import instagram from "./instagram_circle.svg";
-import pin from "./pin.svg";
-import phone from "./phone-alt-solid.svg";
-import mail from "./envelope-solid.svg";
-import link from "./chain.svg";
-import profileImg from "./user-circle-solid.svg";
-import "./template1.css";
+import facebook from "../facebook_circle.svg";
+import linkedin from "../linkedin_circle.svg";
+import twitter from "../twitter_circle.svg";
+import instagram from "../instagram_circle.svg";
+import pin from "../pin.svg";
+import phone from "../phone-alt-solid.svg";
+import mail from "../envelope-solid.svg";
+import link from "../chain.svg";
+import profileImg from "../user-circle-solid.svg";
+import "./Template1.css";
 
 function Template1() {
 	return (
