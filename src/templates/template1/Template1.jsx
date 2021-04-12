@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
-import facebook from "../facebook_circle.svg";
-import linkedin from "../linkedin_circle.svg";
-import twitter from "../twitter_circle.svg";
-import instagram from "../instagram_circle.svg";
-import pin from "../pin.svg";
-import phone from "../phone-alt-solid.svg";
-import mail from "../envelope-solid.svg";
-import link from "../chain.svg";
+import facebook_icon from "../facebook_circle.svg";
+import linkedin_icon from "../linkedin_circle.svg";
+import twitter_icon from "../twitter_circle.svg";
+import instagram_icon from "../instagram_circle.svg";
+import pin_icon from "../pin.svg";
+import phone_icon from "../phone-alt-solid.svg";
+import mail_icon from "../envelope-solid.svg";
+import link_icon from "../chain.svg";
 import profileImg from "../user-circle-solid.svg";
 import "./Template1.css";
 import FormContext from "../../context/formContext";
@@ -15,6 +15,25 @@ function Template1() {
 	const formContext = useContext(FormContext);
 
 	const { formData } = formContext;
+	const {
+		firstName,
+		lastName,
+		jobTitle,
+		department,
+		companyName,
+		email,
+		facebook,
+		instagram,
+		twitter,
+		linkedin,
+		addLine1,
+		addLine2,
+		addLine3,
+		addLine4,
+		mobileNum,
+		phoneNum,
+		siteUrl
+	} = formData;
 
 	console.log(formData);
 	return (
@@ -23,36 +42,61 @@ function Template1() {
 				<div className="details">
 					<img className="profile-img" src={profileImg} alt="profile" />
 					<div className="basic-details">
-						<p className="fullname">John Doe</p>
-						<p>Product Marketing Manager</p>
-						<p>Marketing | Neoito</p>
+						<p className="fullname">
+							{firstName} {lastName}
+						</p>
+						<p>{jobTitle}</p>
+						<p>
+							{department} | {companyName}
+						</p>
 					</div>
 					<hr className="vr" />
 					<div className="contact-details">
-						<img className="contact-icon" src={phone} alt="phone icon" />
-						<p>111 222 333 | 101 222 333</p>
-						<img className="contact-icon" src={mail} alt="mail icon" />
-						<a href="john@doe.com">john@doe.com</a>
-						<img className="contact-icon" src={link} alt="url icon" />
-						<a href="www.neoito.com">www.neoito.com</a>
-						<img className="contact-icon" src={pin} alt="location icon" />
-						<p>Neoito, Trivandrum</p>
+						<img className="contact-icon" src={phone_icon} alt="phone icon" />
+						<p>
+							{phoneNum} | {mobileNum}
+						</p>
+						<img className="contact-icon" src={mail_icon} alt="mail icon" />
+						<a href="john@doe.com">{email}</a>
+						<img className="contact-icon" src={link_icon} alt="url icon" />
+						<a href="www.neoito.com">{siteUrl}</a>
+						<img className="contact-icon" src={pin_icon} alt="location icon" />
+						<p>
+							{addLine1 ? addLine1 + "," : ""} {addLine2 ? addLine2 + "," : ""}{" "}
+							{addLine3 ? addLine3 + "," : ""} {addLine4 ? addLine4 : ""}
+						</p>
 					</div>
 				</div>
 
 				<hr />
 				<div className="social-links">
-					<a href="www.linkedin.com">
-						<img className="social-logo" src={linkedin} alt="linkedin logo" />
+					<a href={linkedin}>
+						<img
+							className="social-logo"
+							src={linkedin_icon}
+							alt="linkedin logo"
+						/>
 					</a>
-					<a href="www.facebook.com">
-						<img className="social-logo" src={facebook} alt="facebook logo" />
+					<a href={facebook}>
+						<img
+							className="social-logo"
+							src={facebook_icon}
+							alt="facebook logo"
+						/>
 					</a>
-					<a href="www.twitter.com">
-						<img className="social-logo" src={twitter} alt="twitter logo" />
+					<a href={twitter}>
+						<img
+							className="social-logo"
+							src={twitter_icon}
+							alt="twitter logo"
+						/>
 					</a>
-					<a href="www.instagram.com">
-						<img className="social-logo" src={instagram} alt="instagram logo" />
+					<a href={instagram}>
+						<img
+							className="social-logo"
+							src={instagram_icon}
+							alt="instagram logo"
+						/>
 					</a>
 				</div>
 			</div>

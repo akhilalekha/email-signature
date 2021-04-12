@@ -12,7 +12,7 @@ const FormState = props => {
 	const [state, dispatch] = useReducer(FormReducer, initialState);
 
 	const getFormData = data => {
-		console.log("in form context", { data });
+		// console.log("in form context", { data });
 		dispatch({
 			type: SET_TEMPLATE,
 			payload: data
