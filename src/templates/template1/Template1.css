@@ -3,10 +3,12 @@
 	background-color: #0bf48c;
 }
 .signature {
-	margin: 5rem 2.5rem;
+	margin: 3rem 6rem;
 	padding: 2rem;
 	background-color: white;
 	border-radius: 10px;
+	position: fixed;
+	top: 0rem;
 }
 
 .details {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import facebook from "../facebook_circle.svg";
 import linkedin from "../linkedin_circle.svg";
 import twitter from "../twitter_circle.svg";
@@ -9,8 +9,14 @@ import mail from "../envelope-solid.svg";
 import link from "../chain.svg";
 import profileImg from "../user-circle-solid.svg";
 import "./Template1.css";
+import FormContext from "../../context/formContext";
 
 function Template1() {
+	const formContext = useContext(FormContext);
+
+	const { formData } = formContext;
+
+	console.log(formData);
 	return (
 		<div className="template1">
 			<div className="signature">

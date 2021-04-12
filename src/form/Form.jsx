@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
-
+import FormContext from "../context/formContext";
 import "./Form.css";
 
 function Form() {
+	const formContext = useContext(FormContext);
+
 	const { register, handleSubmit } = useForm({
 		defaultValues: {
 			firstName: "John",
@@ -26,11 +28,12 @@ function Form() {
 			isDeveloper: true
 		}
 	});
-	const onSubmit = data => console.log(data);
+	// const setTemplate = data => console.log({ data });
+	const setTemplate = data => formContext.getFormData(data);
 
 	return (
 		<div className="form-container">
-			<form className="form" onSubmit={handleSubmit(onSubmit)}>
+			<form className="form" onSubmit={handleSubmit(setTemplate)}>
 				<h4>Enter your signature details</h4>
 				<label htmlFor="firstName">First Name</label>
 				<input name="firstName" ref={register} placeholder="John" />
