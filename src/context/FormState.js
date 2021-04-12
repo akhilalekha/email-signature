@@ -6,7 +6,7 @@ import { SET_TEMPLATE } from "./types";
 
 const FormState = props => {
 	const initialState = {
-		formdata: {}
+		formData: {}
 	};
 
 	const [state, dispatch] = useReducer(FormReducer, initialState);
