@@ -4,15 +4,15 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	/* justify-content: center; */
 }
 .signature {
 	margin: 3rem;
 	padding: 2rem;
 	background-color: white;
 	border-radius: 10px;
-	position: fixed;
-	top: 0rem;
+	/* position: fixed;
+	top: 0rem; */
 }
 
 .details {
@@ -68,4 +68,27 @@ a {
 
 .vr {
 	margin: 0 1rem;
+}
+
+.copy-btn {
+	position: relative;
+	top: -3.25rem;
+	right: -14.5rem;
+}
+.copy-btn button {
+	border: unset;
+	background-color: #417d78;
+	color: white;
+	padding: 0.25rem 1rem;
+	/* border-radius: 5px; */
+	font-weight: bold;
+}
+
+.copy-btn button:hover {
+	background-color: #22413e;
+	cursor: pointer;
+}
+
+.copy-btn button:focus {
+	outline: none;
 }

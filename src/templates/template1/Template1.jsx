@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef, useState } from "react";
 import facebook_icon from "../facebook_circle.svg";
 import linkedin_icon from "../linkedin_circle.svg";
 import twitter_icon from "../twitter_circle.svg";
@@ -35,10 +35,22 @@ function Template1() {
 		siteUrl
 	} = formData;
 
-	console.log(formData);
+	// console.log(formData);
+
+	const [copy, setCopy] = useState("Copy");
+	const template1Ref = useRef(null);
+	// console.log(template1Ref.current);
+
+	function copyToClipboard(e) {
+		const range = document.createRange();
+		range.selectNode(template1Ref.current);
+		window.getSelection().addRange(range);
+		document.execCommand("copy");
+		setCopy("Copied!");
+	}
 	return (
 		<div className="template1">
-			<div className="signature">
+			<div className="signature" ref={template1Ref}>
 				<div className="details">
 					<img className="profile-img" src={profileImg} alt="profile" />
 					<div className="basic-details">
@@ -99,6 +111,9 @@ function Template1() {
 						/>
 					</a>
 				</div>
+			</div>
+			<div className="copy-btn">
+				<button onClick={copyToClipboard}>{copy}</button>
 			</div>
 		</div>
 	);
