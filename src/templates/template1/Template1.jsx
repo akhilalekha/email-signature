@@ -1,13 +1,13 @@
 import React, { useContext, useRef, useState } from "react";
-import facebook_icon from "../facebook_circle.svg";
-import linkedin_icon from "../linkedin_circle.svg";
-import twitter_icon from "../twitter_circle.svg";
-import instagram_icon from "../instagram_circle.svg";
-import pin_icon from "../pin.svg";
-import phone_icon from "../phone-alt-solid.svg";
-import mail_icon from "../envelope-solid.svg";
-import link_icon from "../chain.svg";
-import profileImg from "../user-circle-solid.svg";
+import facebook_icon from "../../images/facebook_circle.svg";
+import linkedin_icon from "../../images/linkedin_circle.svg";
+import twitter_icon from "../../images/twitter_circle.svg";
+import instagram_icon from "../../images/instagram_circle.svg";
+import pin_icon from "../../images/pin.svg";
+import phone_icon from "../../images/phone-alt-solid.svg";
+import mail_icon from "../../images/envelope-solid.svg";
+import link_icon from "../../images/chain.svg";
+import profileImg from "../../images/user-circle-solid.svg";
 import "./Template1.css";
 import FormContext from "../../context/formContext";
 
