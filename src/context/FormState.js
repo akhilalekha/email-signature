@@ -11,7 +11,7 @@ const FormState = props => {
 
 	const [state, dispatch] = useReducer(FormReducer, initialState);
 
-	const getFormData = data => {
+	const setFormData = data => {
 		// console.log("in form context", { data });
 		dispatch({
 			type: SET_TEMPLATE,
@@ -23,7 +23,7 @@ const FormState = props => {
 		<FormContext.Provider
 			value={{
 				formData: state.formData,
-				getFormData
+				setFormData
 			}}
 		>
 			{props.children}

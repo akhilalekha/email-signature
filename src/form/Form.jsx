@@ -15,21 +15,21 @@ function Form() {
 			companyName: "Neoito",
 			phoneNum: "111 222 333",
 			mobileNum: "111 222 333",
-			siteUrl: "www.neoito.com",
+			siteUrl: "https://www.neoito.com",
 			email: "john@doe.com",
 			addLine1: "street",
 			addLine2: "city",
 			addLine3: "city",
 			addLine4: "state",
-			linkedin: "www.linkedin.com",
-			facebook: "www.facebook.com",
-			twitter: "www.twitter.com",
-			instagram: "www.instagram.com",
+			linkedin: "https://www.linkedin.com",
+			facebook: "https://www.facebook.com",
+			twitter: "https://www.twitter.com",
+			instagram: "https://www.instagram.com",
 			isDeveloper: true
 		}
 	});
 	// const setTemplate = data => console.log({ data });
-	const setTemplate = data => formContext.getFormData(data);
+	const setTemplate = data => formContext.setFormData(data);
 
 	return (
 		<div className="form-container">

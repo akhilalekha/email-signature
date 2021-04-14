@@ -45,7 +45,9 @@ function Template1() {
 		const range = document.createRange();
 		range.selectNode(template1Ref.current);
 		window.getSelection().addRange(range);
+		console.log("range", range);
 		document.execCommand("copy");
+		window.getSelection().empty();
 		setCopy("Copied!");
 	}
 	return (
